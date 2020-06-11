@@ -33,13 +33,10 @@ public class Timer {
 		logger.info("{} init", timerName);
 		watch.start();
 	}
-
+    
+	//3초딜레이에 5초마다 찍는다.
 	@Scheduled(fixedRateString = "5", initialDelay = 3000)
 	
-	11111
-	222222
-	3333
-	334444
 
 	public void tick() throws InterruptedException{
 		watch.stop();
