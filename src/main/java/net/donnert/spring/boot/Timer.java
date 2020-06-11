@@ -35,7 +35,7 @@ public class Timer {
 	}
     //
 	//3초딜레이에 5초마다 찍는다.
-	
+	//
 	
 	@Scheduled(fixedRateString = "5", initialDelay = 3000)
 	
