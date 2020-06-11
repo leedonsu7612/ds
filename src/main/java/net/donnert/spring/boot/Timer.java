@@ -39,7 +39,7 @@ public class Timer {
 	11111
 	222222
 	3333
-	
+	334444
 
 	public void tick() throws InterruptedException{
 		watch.stop();
