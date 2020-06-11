@@ -1,0 +1,35 @@
+spring:
+  profiles: 
+    active: dev
+  timerName: exampleTimer
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+---
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    lazyLoadingEnabled: true
+    aggressiveLazyLoading: false
+    mapUnderscoreToCamelCase: true
+---
+spring:
+  profiles: local
+  task:
+    fixedDelay: 1000
+    name: localTask
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1521:ORCL
+    
+    username: C##lds2
+    password: passtest
+
+---
+spring:
+  profiles: dev
+  task:
+    fixedDelay: 5000
+    name: devTask
+  datasource:
+    url:  jdbc:oracle:thin:@127.0.0.1:1521:ORCL
+    username: C##lds2
+    password: passtest
