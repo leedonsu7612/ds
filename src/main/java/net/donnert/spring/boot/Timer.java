@@ -37,6 +37,8 @@ public class Timer {
 	@Scheduled(fixedRateString = "5", initialDelay = 3000)
 	
 	11111
+	222222
+	3333
 	
 
 	public void tick() throws InterruptedException{
